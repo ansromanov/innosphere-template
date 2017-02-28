@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>innosphere template</title>
+  <!-- normalize.css -->
+  <link rel="stylesheet" type="text/css" href="bower_components/normalize-css/normalize.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="css/slick-innosphere-theme.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+  <!-- main styles -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__header-top">
+          <div class="header__header-top__address-block">
+            <a href="#contacts-block" class="header__header-top__address-block_link">
+              <p class="header__header-top__address-block_header">
+                <i class="fa fa-map-marker" aria-hidden="true"></i> Visit our office
+              </p>
+              <p class="header__header-top__address-block_content">
+                2945 Rinehart Road, Sunrise
+              </p>
+            </a>
+          </div>
+          <div class="header__header-top__address-block">
+            <a href="tel:+781211111111" class="header__header-top__address-block_link">
+              <p class="header__header-top__address-block_header">
+                <i class="fa fa-phone" aria-hidden="true"></i> Contact us via phone
+              </p>
+              <p class="header__header-top__address-block_content">
+                +44 20 7946 0041 3685
+              </p>
+            </a>
+          </div>
+          <div class="header__header-top__address-block">
+            <a href="mailto:info@innosphere.com?subject=question to innosphere" class="header__header-top__address-block_link">
+              <p class="header__header-top__address-block_header">
+                <i class="fa fa-envelope" aria-hidden="true"></i> Ask us questions
+              </p>
+              <p class="header__header-top__address-block_content">
+                info@innosphere.com
+              </p>
+            </a>
+          </div>
+        </div>
+        <nav class="header__top-menu">
+          <ul class="header__top-menu__list">
+            <li class="header__top-menu__list-item">
+              <a href="#" class="header__top-menu__list-item-link">homepage</a>
+            </li>
+            <li class="header__top-menu__list-item">
+              <a href="#" class="header__top-menu__list-item-link">search</a>
+            </li>
+            <li class="header__top-menu__list-item">
+              <a href="#" class="header__top-menu__list-item-link">recent images</a>
+            </li>
+            <li class="header__top-menu__list-item">
+              <a href="#" class="header__top-menu__list-item-link">about</a>
+            </li>
+            <li class="header__top-menu__list-item">
+              <a href="#" class="header__top-menu__list-item-link">testimonials</a>
+            </li>
+            <li class="header__top-menu__list-item">
+              <a href="#" class="header__top-menu__list-item-link">sponsors</a>
+            </li>
+            <li class="header__top-menu__list-item">
+              <a href="#" class="header__top-menu__list-item-link">team</a>
+            </li>
+            <li class="header__top-menu__list-item">
+              <a href="#" class="header__top-menu__list-item-link">contact</a>
+            </li>
+          </ul>
+          <div class="header__top-menu__social-buttons">
+            <div class="header__top-menu__social-buttons_button">
+              <a href="https://www.facebook.com" class="header__top-menu__social-buttons_button-link">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="header__top-menu__social-buttons_button">
+              <a href="https://www.linkedin.com" class="header__top-menu__social-buttons_button-link">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="header__top-menu__social-buttons_button">
+              <a href="https://www.behance.net" class="header__top-menu__social-buttons_button-link button-link-behance">
+                <i class="fa fa-behance" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </nav>
+        <div class="header__promo">
+          <article class="header__promo_content">
+            <h2 class="header__promo_content-title">Your beautiful handcrafted stock photography marketplace.</h2>
+            <p class="header__promo_content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis tortor non ipsum condimentum molestie...</p>
+          </article>
+          <a href="#about-stock" class="header__promo_button button-pink">know more</a>
+        </div>
+        <div class="header__search-field">
+          <label for="gallery-search__form_button" class="header__search-field_button">
+              <i class="fa fa-search" aria-hidden="true"></i>
+          </label>
+          <input type="text" placeholder="search all galleries" class="header__search-field_prompt" name="gallery-search__query" form="gallery-search__form"
+            required>
+        </div>
+      </div>
+    </header>
+    <section class="gallery-search">
+      <div class="container">
+        <form action="script.php" class="gallery-search__form" id="gallery-search__form" enctype="multipart/form-data" action="get">
+          <!-- Categories -->
+          <div class="gallery-search__form__form-block">
+            <p class="gallery-search__form__form-block_caption">Categories</p>
+            <div class="gallery-search__form__form-block__dropdown">
+              <input class="gallery-search__form__form-block__dropdown_text" type="text" readonly placeholder="Architecture">
+              <button class="gallery-search__form__form-block__dropdown_button" type="button"><i class="fa fa-angle-down" aria-hidden="true"></i></button>
+              <div class="gallery-search__form__form-block__dropdown__content">
+                <a href="#" class="gallery-search__form__form-block__dropdown__content-link">Link 1</a>
+                <a href="#" class="gallery-search__form__form-block__dropdown__content-link">Link 2</a>
+                <a href="#" class="gallery-search__form__form-block__dropdown__content-link">Link 3</a>
+              </div>
+            </div>
+          </div>
+          <!-- License Type -->
+          <div class="gallery-search__form__form-block">
+            <p class="gallery-search__form__form-block_caption">License Type</p>
+            <div class="gallery-search__form__form-block__dropdown">
+              <input class="gallery-search__form__form-block__dropdown_text" type="text" readonly placeholder="Creative">
+              <button class="gallery-search__form__form-block__dropdown_button" type="button"><i class="fa fa-angle-down" aria-hidden="true"></i></button>
+              <div class="gallery-search__form__form-block__dropdown__content">
+                <a href="#" class="gallery-search__form__form-block__dropdown__content-link">Link 1</a>
+                <a href="#" class="gallery-search__form__form-block__dropdown__content-link">Link 2</a>
+                <a href="#" class="gallery-search__form__form-block__dropdown__content-link">Link 3</a>
+              </div>
+            </div>
+          </div>
+          <!-- Image Size -->
+          <div class="gallery-search__form__form-block">
+            <p class="gallery-search__form__form-block_caption">Image Size</p>
+            <div class="gallery-search__form__form-block__dropdown">
+              <input class="gallery-search__form__form-block__dropdown_text" type="text" readonly placeholder="XXXL">
+              <button class="gallery-search__form__form-block__dropdown_button" type="button"><i class="fa fa-angle-down" aria-hidden="true"></i></button>
+              <div class="gallery-search__form__form-block__dropdown__content">
+                <a href="#" class="gallery-search__form__form-block__dropdown__content-link">Link 1</a>
+                <a href="#" class="gallery-search__form__form-block__dropdown__content-link">Link 2</a>
+                <a href="#" class="gallery-search__form__form-block__dropdown__content-link">Link 3</a>
+              </div>
+            </div>
+          </div>
+          <!-- Color -->
+          <div class="gallery-search__form__form-block">
+            <p class="gallery-search__form__form-block_caption">Color</p>
+            <div class="gallery-search__form__form-block__select">
+              <input class="gallery-search__form__form-block__select_text" type="text" readonly placeholder="HEX&emsp;&emsp;#F6546A">
+              <button class="gallery-search__form__form-block__select_button" onclick="">apply</button>
+            </div>
+          </div>
+          <!-- Browse -->
+          <div class="gallery-search__form__form-block">
+            <p class="gallery-search__form__form-block_caption">Browse</p>
+            <div class="gallery-search__form__form-block__dropdown">
+              <input class="gallery-search__form__form-block__dropdown_text" type="text" readonly placeholder="Most Viewed">
+              <button class="gallery-search__form__form-block__dropdown_button" type="button"><i class="fa fa-angle-down" aria-hidden="true"></i></button>
+              <div class="gallery-search__form__form-block__dropdown__content">
+                <a href="#" class="gallery-search__form__form-block__dropdown__content-link">Link 1</a>
+                <a href="#" class="gallery-search__form__form-block__dropdown__content-link">Link 2</a>
+                <a href="#" class="gallery-search__form__form-block__dropdown__content-link">Link 3</a>
+              </div>
+            </div>
+          </div>
+          <!-- Location -->
+          <div class="gallery-search__form__form-block">
+            <p class="gallery-search__form__form-block_caption">Location</p>
+            <div class="gallery-search__form__form-block__dropdown">
+              <input class="gallery-search__form__form-block__dropdown_text" type="text" readonly placeholder="Worldwide">
+              <button class="gallery-search__form__form-block__dropdown_button" type="button"><i class="fa fa-angle-down" aria-hidden="true"></i></button>
+              <div class="gallery-search__form__form-block__dropdown__content">
+                <a href="#" class="gallery-search__form__form-block__dropdown__content-link">Link 1</a>
+                <a href="#" class="gallery-search__form__form-block__dropdown__content-link">Link 2</a>
+                <a href="#" class="gallery-search__form__form-block__dropdown__content-link">Link 3</a>
+              </div>
+            </div>
+          </div>
+          <!-- Adult Content -->
+          <div class="gallery-search__form__form-block">
+            <p class="gallery-search__form__form-block_caption">Adult Content</p>
+            <div class="gallery-search__form__form-block__choose">
+              <button class="gallery-search__form__form-block__choose_button">
+                <input type="radio" id="gallery-search__form__form-block__choose-yes" checked name="gallery-search__form__form-block__choose-selector">
+                <label for="gallery-search__form__form-block__choose-yes">yes</label>
+              </button>
+              <button class="gallery-search__form__form-block__choose_button">
+                <input type="radio" id="gallery-search__form__form-block__choose-no" name="gallery-search__form__form-block__choose-selector">
+                <label for="gallery-search__form__form-block__choose-no">no</label>
+              </button>
+            </div>
+          </div>
+          <button type="submit" class="gallery-search__form_button button-pink" id="gallery-search__form_button">start your search</button>
+        </form>
+        <article class="gallery-search__promo">
+          <h2 class="gallery-search__promo_caption">Over 40 Million Stock Photos, Vectors, Videos, and Music Tracks</h2>
+          <p class="gallery-search__promo_text">Search for images anywhere using our award-winning iPad®, iPhone®, and Android® apps. Functional enough to use
+            alone, beautiful enough to show off to clients.</p>
+        </article>
+      </div>
+    </section>
+    <section class="latest-photo">
+      <div class="container">
+        <h2 class="latest-photo_caption">Recently uploaded</h2>
+        <div class="latest-photo__collection">
+          <div class="latest-photo__flex-container">
+            <img src="img/img_upload_1.png" alt="girl" class="latest-photo__collection-image">
+            <img src="img/img_upload_2.png" alt="buddha" class="latest-photo__collection-image">
+          </div>
+          <img src="img/img_upload_3.png" alt="pizza" class="latest-photo__collection-image">
+          <img src="img/img_upload_4.png" alt="boy" class="latest-photo__collection-image">
+          <div class="latest-photo__flex-container">
+            <img src="img/img_upload_5.png" alt="workspace" class="latest-photo__collection-image">
+            <img src="img/img_upload_6.png" alt="fork" class="latest-photo__collection-image">
+          </div>
+        </div>
+        <a href="#" class="latest-photo_button button-pink">load more</a>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <h2 class="about_caption" id="about-stock">About Stock photography</h2>
+      </div>
+      <div class="about__block">
+        <div class="about__block-opacity">
+          <div class="container">
+            <h1 class="about__block_caption">What is Stock Photography?</h1>
+            <p class="about__block_text">Supply of photographs, which are often licensed for specific uses. It is used to fulfill the needs of creative
+              assignments instead of hiring a photographer, often for a lower cost. Today, stock images can be presented
+              in searchable online databases. They can be purchased and delivered online.</p>
+            <a href="#about-stock" class="about__block_button button-pink">know more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="customers">
+      <div class="container">
+        <h2 class="customers_caption">Hear what our customers are saying</h2>
+        <div class="customers__flex-container">
+          <div class="customer__review">
+            <div class="customer__review_quote customer__review_quote-red">
+              <i class="fa fa-quote-left" aria-hidden="true"></i>
+            </div>
+            <p class="customer__review_text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula consequat velit eget iaculis. ”</p>
+            <div class="customer__review__author">
+              <span class="customer__review__author-name">Jennifer R. Rhoades, CEO, Bubblesphere</span>
+              <img src="img/customer_1.png" alt="" class="customer__review__author-photo">
+            </div>
+          </div>
+          <div class="customer__review">
+            <div class="customer__review_quote customer__review_quote-blue">
+              <i class="fa fa-quote-left" aria-hidden="true"></i>
+            </div>
+            <p class="customer__review_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula consequat velit eget iaculis.</p>
+            <div class="customer__review__author">
+              <p class="customer__review__author-name">Matthew J. `s, Founder of Feedclub</p>
+              <img src="img/customer_2.png" alt="" class="customer__review__author-photo">
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="sponsors">
+      <div class="container">
+        <h2 class="sponsors_caption">Our sponsors</h2>
+        <div class="sponsors__slider">
+          <div class="sponsors__slider__block">
+            <a href="#" class="sponsors__slider__block_link">
+              <img src="img/logo/logo_sony.png" alt="" class="sponsors__slider__block_link-image">
+            </a>
+          </div>
+          <div class="sponsors__slider__block">
+            <a href="#" class="sponsors__slider__block_link">
+              <img src="img/logo/logo_ibm.png" alt="" class="sponsors__slider__block_link-image">
+            </a>
+          </div>
+          <div class="sponsors__slider__block">
+            <a href="#" class="sponsors__slider__block_link"><img src="img/logo/logo_microsoft.png" alt="" class="sponsors__slider__block_link-image"></a>
+          </div>
+          <div class="sponsors__slider__block">
+            <a href="#" class="sponsors__slider__block_link"><img src="img/logo/logo_cisco.png" alt="" class="sponsors__slider__block_link-image"></a>
+          </div>
+          <div class="sponsors__slider__block">
+            <a href="#" class="sponsors__slider__block_link"><img src="img/logo/logo_google.png" alt="" class="sponsors__slider__block_link-image"></a>
+          </div>
+          <div class="sponsors__slider__block">
+            <a href="#" class="sponsors__slider__block_link"><img src="img/logo/logo_ebay.png" alt="" class="sponsors__slider__block_link-image"></a>
+          </div>
+          <div class="sponsors__slider__block">
+            <a href="#" class="sponsors__slider__block_link"><img src="img/logo/logo_samsung.png" alt="" class="sponsors__slider__block_link-image"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="team">
+      <div class="container">
+        <h2 class="team__caption">Meet our team</h2>
+        <div class="team__flex-container">
+          <div class="team__member">
+            <img src="img/team_member_1.png" alt="Patricia Wright" class="team__member_photo">
+            <h3 class="team__member_name">Patricia Wright</h3>
+            <h4 class="team__member_position">Lead Developer</h4>
+            <p class="team__member_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et feugiat mi. Sed lacinia euismod convallis.</p>
+            <div class="team__member__social">
+              <div class="team__member__social_button team__member__social_button-twitter">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </div>
+              <div class="team__member__social_button team__member__social_button-facebook">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </div>
+              <div class="team__member__social_button team__member__social_button-dribbler">
+                <i class="fa fa-dribbble" aria-hidden="true"></i>
+              </div>
+              <div class="team__member__social_button team__member__social_button-pinterest">
+                <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div class="team__member">
+            <img src="img/team_member_2.png" alt="James C. Cotter" class="team__member_photo">
+            <h3 class="team__member_name">James C. Cotter</h3>
+            <h4 class="team__member_position">CEO</h4>
+            <p class="team__member_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et feugiat mi. Sed lacinia euismod convallis.</p>
+            <div class="team__member__social">
+              <div class="team__member__social_button team__member__social_button-twitter">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </div>
+              <div class="team__member__social_button team__member__social_button-facebook">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </div>
+              <div class="team__member__social_button team__member__social_button-dribbler">
+                <i class="fa fa-dribbble" aria-hidden="true"></i>
+              </div>
+              <div class="team__member__social_button team__member__social_button-pinterest">
+                <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div class="team__member">
+            <img src="img/team_member_3.png" alt="Sarah Cole" class="team__member_photo">
+            <h3 class="team__member_name">Sarah Cole</h3>
+            <h4 class="team__member_position">Web Designer</h4>
+            <p class="team__member_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et feugiat mi. Sed lacinia euismod convallis.</p>
+            <div class="team__member__social">
+              <div class="team__member__social_button team__member__social_button-twitter">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </div>
+              <div class="team__member__social_button team__member__social_button-facebook">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </div>
+              <div class="team__member__social_button team__member__social_button-dribbler">
+                <i class="fa fa-dribbble" aria-hidden="true"></i>
+              </div>
+              <div class="team__member__social_button team__member__social_button-pinterest">
+                <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts" id="contacts-block">
+      <div class="contacts_map" id="contacts_map-main">
+        <iframe width="1400" height="449" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJt0zKVeFklVQREwM7WpcIXA0&key=AIzaSyANWSjlt2c-ksli4UJU76sjR0hWxNibqyI"
+          allowfullscreen></iframe>
+      </div>
+      <div class="container">
+        <h2 class="contacts_caption">Get in touch with us</h2>
+        <div class="contacts__flex-container">
+          <form action="" class="contacts__form" method="POST">
+            <input type="text" name="name" class="contacts__form_field contacts__form_field-name" placeholder="First name" required>
+            <input type="text" name="last-name" class="contacts__form_field contacts__form_field-last-name" placeholder="Last name" required>
+            <input type="email" name="email" class="contacts__form_field contacts__form_field-email" placeholder="Email" required>
+            <input type="tel" name="phone-number" class="contacts__form_field contacts__form_field-phone-number" placeholder="Phone number">
+            <textarea name="message" id="" cols="30" rows="10" class="contacts__form_field contacts__form_field-message" placeholder="Message"></textarea>
+            <button type="submit" class="contacts__form_button button-pink">send message</button>
+          </form>
+          <div class="contacts__info">
+            <h3 class="contacts__info_caption contacts__info_caption-address">Our address</h3>
+            <div class="contacts__info__address-block">
+              <address class="contacts__info__address-block_item">
+                <div class="contacts__info__address-block_item-left">
+                  Address:
+                </div>
+                <div class="contacts__info__address-block_item-right">
+                  3497 Gateway Road Portland, OR 97217
+                </div>
+              </address>
+              <address class="contacts__info__address-block_item">
+                <div class="contacts__info__address-block_item-left">
+                  Phone:
+                </div>
+                <div class="contacts__info__address-block_item-right">
+                  (229) 503-289-9830
+                </div>
+              </address>
+              <address class="contacts__info__address-block_item">
+                <div class="contacts__info__address-block_item-left">
+                  Email:
+                </div>
+                <div class="contacts__info__address-block_item-right">
+                  www.mobilecom.com
+                </div>
+              </address>
+            </div>
+            <h3 class="contacts__info_caption contacts__info_caption-about">About us</h3>
+            <p class="contacts__info__about-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida dapibus sapien.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__social">
+        <a href="https://www.facebook.com" class="footer__social_button">
+          <div class="footer__social_button_image footer__social_button_image-facebook"></div>
+        </a>
+        <a href="http://www.twitter.com" class="footer__social_button">
+          <div class="footer__social_button_image footer__social_button_image-twitter"></div>
+        </a>
+        <a href="https://www.linkedin.com" class="footer__social_button">
+          <div class="footer__social_button_image footer__social_button_image-linkedin"></div>
+        </a>
+        <a href="http://www.viber.com" class="footer__social_button">
+          <div class="footer__social_button_image footer__social_button_image-viber"></div>
+        </a>
+      </div>
+      <p class="footer_copyright">© 2015 Innosphere - All rights reserved - made by Vid Kraljić Radulović</p>
+    </footer>
+    </div>
+    <!-- jquery -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- slick -->
+    <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+    <script src="js/slick.js"></script>
+    <!-- js -->
+    <script src="js/gallery-search.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
