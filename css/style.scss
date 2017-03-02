@@ -276,7 +276,7 @@ body {
     right: 0px;
     z-index: 100;
     background: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     border: 1px solid darken(#f9f9f9, 20%);
   }
   &__form__form-block__dropdown__content-visited {
@@ -327,7 +327,6 @@ body {
   }
   &__form__form-block__choose_button {
     float: left;
-    
     input[type="radio"] {
       display: none;
     }
@@ -345,10 +344,10 @@ body {
       font-weight: 700;
       transition: $short-transition;
       cursor: inherit;
-      &:hover {
-        color: darken(#b3b3b3, 10%);
-        background-color: darken(#ffffff, 10%);
-      }
+    }
+    &:hover {
+      color: darken(#b3b3b3, 10%);
+      background-color: darken(#ffffff, 10%);
     }
     &:first-of-type label {
       border-right: none;
@@ -613,6 +612,11 @@ body {
   padding-top: 55px;
   .contacts_map {
     height: 449px;
+  }
+  #contacts_map-main {
+    width: 1400px;
+    height: 449px;
+    border: none;
   }
   .contacts_caption {
     margin-top: 86px;

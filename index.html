@@ -45,7 +45,7 @@
             </a>
           </div>
           <div class="header__header-top__address-block">
-            <a href="mailto:info@innosphere.com?subject=question to innosphere" class="header__header-top__address-block_link">
+            <a href="mailto:info@innosphere.com?subject=question&nbsp;to&nbsp;innosphere" class="header__header-top__address-block_link">
               <p class="header__header-top__address-block_header">
                 <i class="fa fa-envelope" aria-hidden="true"></i> Ask us questions
               </p>
@@ -118,7 +118,7 @@
     </header>
     <section class="gallery-search">
       <div class="container">
-        <form action="script.php" class="gallery-search__form" id="gallery-search__form" enctype="multipart/form-data" action="get">
+        <form action="script.php" class="gallery-search__form" id="gallery-search__form" enctype="multipart/form-data" method="get">
           <!-- Categories -->
           <div class="gallery-search__form__form-block">
             <p class="gallery-search__form__form-block_caption">Categories</p>
@@ -196,14 +196,14 @@
           <div class="gallery-search__form__form-block">
             <p class="gallery-search__form__form-block_caption">Adult Content</p>
             <div class="gallery-search__form__form-block__choose">
-              <button class="gallery-search__form__form-block__choose_button">
+              <div class="gallery-search__form__form-block__choose_button">
                 <input type="radio" id="gallery-search__form__form-block__choose-yes" checked name="gallery-search__form__form-block__choose-selector">
                 <label for="gallery-search__form__form-block__choose-yes">yes</label>
-              </button>
-              <button class="gallery-search__form__form-block__choose_button">
-                <input type="radio" id="gallery-search__form__form-block__choose-no" name="gallery-search__form__form-block__choose-selector">
+              </div>
+              <div class="gallery-search__form__form-block__choose_button">
+                <input type="radio" id="gallery-search__form__form-block__choose-no"  name="gallery-search__form__form-block__choose-selector">
                 <label for="gallery-search__form__form-block__choose-no">no</label>
-              </button>
+              </div>
             </div>
           </div>
           <button type="submit" class="gallery-search__form_button button-pink" id="gallery-search__form_button">start your search</button>
@@ -274,6 +274,7 @@
             </div>
           </div>
         </div>
+      </div>
     </section>
     <section class="sponsors">
       <div class="container">
@@ -375,19 +376,19 @@
       </div>
     </section>
     <section class="contacts" id="contacts-block">
-      <div class="contacts_map" id="contacts_map-main">
-        <iframe width="1400" height="449" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJt0zKVeFklVQREwM7WpcIXA0&key=AIzaSyANWSjlt2c-ksli4UJU76sjR0hWxNibqyI"
+      <div class="contacts_map">
+        <iframe id="contacts_map-main" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJt0zKVeFklVQREwM7WpcIXA0&key=AIzaSyANWSjlt2c-ksli4UJU76sjR0hWxNibqyI"
           allowfullscreen></iframe>
       </div>
       <div class="container">
         <h2 class="contacts_caption">Get in touch with us</h2>
         <div class="contacts__flex-container">
-          <form action="" class="contacts__form" method="POST">
+          <form action="message.php" class="contacts__form" method="POST">
             <input type="text" name="name" class="contacts__form_field contacts__form_field-name" placeholder="First name" required>
             <input type="text" name="last-name" class="contacts__form_field contacts__form_field-last-name" placeholder="Last name" required>
             <input type="email" name="email" class="contacts__form_field contacts__form_field-email" placeholder="Email" required>
             <input type="tel" name="phone-number" class="contacts__form_field contacts__form_field-phone-number" placeholder="Phone number">
-            <textarea name="message" id="" cols="30" rows="10" class="contacts__form_field contacts__form_field-message" placeholder="Message"></textarea>
+            <textarea name="message" cols="30" rows="10" class="contacts__form_field contacts__form_field-message" placeholder="Message"></textarea>
             <button type="submit" class="contacts__form_button button-pink">send message</button>
           </form>
           <div class="contacts__info">
@@ -441,15 +442,15 @@
       </div>
       <p class="footer_copyright">© 2015 Innosphere - All rights reserved - made by Vid Kraljić Radulović</p>
     </footer>
-    </div>
-    <!-- jquery -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <!-- slick -->
-    <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
-    <script src="js/slick.js"></script>
-    <!-- js -->
-    <script src="js/gallery-search.js"></script>
-    <script src="js/main.js"></script>
+  </div>
+  <!-- jquery -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <!-- slick -->
+  <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+  <script src="js/slick.js"></script>
+  <!-- js -->
+  <script src="js/gallery-search.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

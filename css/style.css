@@ -294,9 +294,9 @@ body {
     font-weight: 700;
     transition: 0.2s;
     cursor: inherit; }
-    .gallery-search__form__form-block__choose_button label:hover {
-      color: #9a9999;
-      background-color: #e6e5e5; }
+  .gallery-search__form__form-block__choose_button:hover {
+    color: #9a9999;
+    background-color: #e6e5e5; }
   .gallery-search__form__form-block__choose_button:first-of-type label {
     border-right: none; }
   .gallery-search__form__form-block__choose_button input[type="radio"]:checked + label {
@@ -514,6 +514,10 @@ body {
   padding-top: 55px; }
   .contacts .contacts_map {
     height: 449px; }
+  .contacts #contacts_map-main {
+    width: 1400px;
+    height: 449px;
+    border: none; }
   .contacts .contacts_caption {
     margin-top: 86px;
     color: #231f1f;
